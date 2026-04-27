@@ -67,7 +67,18 @@ section { padding: 24px 0; }
   aspect-ratio: 4 / 3;
   height: auto;
   object-fit: cover;
+  object-position: center;
   display: block;
+}
+.photo-card img.gallery-landscape { object-position: center center; }
+.photo-card img.gallery-lower-focus { object-position: center 72%; }
+.photo-card img.gallery-wall-patch { object-position: center 38%; }
+.photo-card img.gallery-truck-bed { object-position: center 52%; }
+.photo-card img.gallery-outlet { object-position: center 58%; }
+@media (min-width: 901px) {
+  .photo-card img.gallery-portrait {
+    aspect-ratio: 3 / 4;
+  }
 }
 .photo-card figcaption {
   padding: 14px 16px 16px;
